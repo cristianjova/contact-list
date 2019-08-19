@@ -6,6 +6,9 @@ const app = express();
 // Connect Database
 connectDB();
 
+// Inir Middleware
+app.use(express.json({ extended: false }));
+
 app.get('/', (req, res) =>
   res.json({ msg: 'Bienvenido a ContactKeeper API...' })
 );
