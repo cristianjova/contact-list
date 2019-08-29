@@ -44,14 +44,18 @@ router.post(
 
       // If user email don't exists
       if (!user) {
-        return res.status(400).json({ msg: 'Invalid Credentials' });
+        return res
+          .status(400)
+          .json({ msg: 'Usuario o contraseña incorrectos' });
       }
 
       const isMatch = await bcrypt.compare(password, user.password);
 
       // If password sending don't match with password in db
       if (!isMatch) {
-        return res.status(400).json({ msg: 'Invalid credentials' });
+        return res
+          .status(400)
+          .json({ msg: 'Usuario o contraseña incorrectos' });
       }
 
       // Payload to use with jwt
