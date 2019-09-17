@@ -9,17 +9,17 @@ Application to keep personal or professional contacts
 
 # Run Locally
 
-## Install server dependencies
+Install server dependencies
 ```
 $ npm install
 ```
 
-## Install client dependencies
+Install client dependencies
 ```
 npm run clientinstall
 ```
 
-## Run both Express & React from root
+Run both Express & React from root
 ```
 npm run dev
 ```
