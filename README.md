@@ -7,6 +7,15 @@ Application to keep personal or professional contacts
 * React
 * Express.js
 
+## Run Locally
+# Install server dependencies
+npm install
+
+# Install client dependencies
+npm run clientinstall
+
+# Run both Express & React from root
+npm run dev
 
 ## Authors
 
